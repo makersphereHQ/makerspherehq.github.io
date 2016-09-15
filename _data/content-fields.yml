@@ -1,0 +1,26 @@
+- icon: octicon-shield
+  name: Security & Privacy
+
+- icon: octicon-terminal
+  name: Developer Tools
+
+- icon: octicon-server
+  name: Cloud & Networking
+
+- icon: octicon-globe
+  name: Connectivity & Communication
+
+- icon: octicon-hubot
+  name: Machine Learning & AI
+
+- icon: octicon-circuit-board
+  name: Open Hardware & IoT
+
+- icon: octicon-repo-clone
+  name: Open Source Software
+
+- icon: octicon-mortar-board
+  name: Research & Education
+
+- icon: octicon-light-bulb
+  name: Open Knowledge & Innovation

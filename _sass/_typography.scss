@@ -1,0 +1,32 @@
+.heading {
+    font-family: $base__font-family--heading;
+    font-size: 1.175em;
+    font-weight: 300;
+    color: $color__black;
+}
+.heading--is-below {
+    margin-top: 0.25em;
+    font-size: 1.0875em;
+}
+.heading--is-center {
+    text-align: center;
+}
+.heading--is-light {
+    color: $color__transparent--hover;
+}
+@media screen and (min-width:23em) {
+    .heading {
+        font-size: 1.25em;
+    }
+    .heading--is-below {
+        font-size: 1.175em;
+    }
+}
+@media screen and (min-width:48em) {
+    .heading {
+        font-size: 2.25em;
+    }
+    .heading--is-below {
+        font-size: 2.175em;
+    }
+}

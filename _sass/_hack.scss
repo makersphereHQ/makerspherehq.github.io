@@ -1,0 +1,42 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    font-family: $base__font-family;
+    font-weight: 400;
+}
+a, button, span, i, input {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+@-webkit-keyframes fadeBackground {
+    0%, 100% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+}
+@-moz-keyframes fadeBackground {
+    0%, 100% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+}
+@keyframes fadeBackground {
+    0%, 100% {
+        background-position: 0 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+}

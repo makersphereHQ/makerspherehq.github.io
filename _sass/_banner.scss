@@ -1,0 +1,41 @@
+.banner {
+    position: relative;
+    z-index: 50;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 75vh;
+    max-height: 75vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0) 100%);
+}
+.banner__sfx {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(315deg, rgba(30, 214, 150, 0.6), rgba(29, 176, 224, 0.6), rgba(240, 70, 109, 0.6));
+    background-size: 275% 275%;
+    -webkit-animation: fadeBackground 85s ease infinite;
+    -moz-animation: fadeBackground 85s ease infinite;
+    animation: fadeBackground 85s ease infinite;
+}
+.banner__sfx-inner {
+    position: relative;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/artwork__background--clean-bw@2x.png') center center no-repeat;
+    background-size: cover;
+}
+.banner__inner {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.banner__content {
+    max-width: 95%;
+}

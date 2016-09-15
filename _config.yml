@@ -1,0 +1,22 @@
+# Makersphere HQ Landing Page
+# Version @1.0.0
+
+# Site settings
+title: "Makersphere - Open Innovation Lab"
+email: hello@makersphere.org
+description: "We’re an independent, community-funded non-profit startup dedicated to open-source technology and innovation. Making the world a better, happier and more innovative place, shaping the future of technology together with the people, for the people. One project at the time."
+baseurl: ""
+url: "https://makersphere.org"
+blog_url: "https://blog.makersphere.org"
+twitter_url: "https://twitter.com/makerspherehq"
+medium_url: "https://medium.com/@makerspherehq"
+github_url:  "https://github.com/makerspherehq"
+instagram_url: "https://instagram.com/makerspherehq"
+facebook_url: "https://facebook.com/makerspherehq"
+livestream_url: "https://livestream.com/accounts/16151251"
+
+
+# Build settings
+sass:
+    sass_dir: _sass
+    style: compressed

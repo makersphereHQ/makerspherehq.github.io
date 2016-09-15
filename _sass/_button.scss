@@ -1,0 +1,48 @@
+.btn {
+    display: block;
+    padding: 0.5em 1em;
+    border: 1px solid #000;
+    border-radius: 1.25em;
+    outline: 0;
+    font-family: $base__font-family;
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+.btn--is-transparent {
+    color: $color__transparent;
+    border-color: $color__transparent;
+}
+.btn--is-transparent:hover {
+    color: $color__black;
+    border-color: $color__transparent--hover;
+    background: $color__transparent--hover;
+}
+.btn--is-transparent:active {
+    color: $color__black--hover;
+    border-color: $color__transparent--active;
+    background: $color__transparent--active;
+}
+.btn--is-big {
+    font-size: 1.25em;
+    font-weight: 300;
+}
+.headroom--not-top.headroom--pinned .btn {
+    color: $color__green;
+    border-color: $color__green;
+    background: transparent;
+}
+.headroom--not-top.headroom--pinned .btn:hover {
+    color: $color__white;
+    border-color: $color__green--hover;
+    background: $color__green--hover;
+}
+.headroom--not-top.headroom--pinned .btn:active {
+    color: $color__white;
+    border-color: $color__green--active;
+    background: $color__green--active;
+}
