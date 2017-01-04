@@ -4,7 +4,7 @@
 # Site settings
 title: "Makersphere - Open Innovation Lab"
 email: hello@makersphere.org
-description: "We’re an independent, community-funded non-profit startup dedicated to open-source technology and innovation. Making the world a better, happier and more innovative place, shaping the future of technology together with the people, for the people. One project at the time."
+description: "We’re an independent, community-funded non-profit startup dedicated to open-source technology and innovation. Making the world a better, happier and more innovative place, shaping the future of technology together with the people, for the people. One project at a time."
 baseurl: ""
 url: "https://makersphere.org"
 blog_url: "https://blog.makersphere.org"
