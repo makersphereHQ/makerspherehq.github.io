@@ -36,15 +36,30 @@
 .footer__content--is-split {
     width: 100%;
     max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 @media screen and (min-width:48em) {
     .footer__content--is-split {
+        align-items: center;
+        justify-content: space-around;
         width: 100%;
         max-width: 50%;
     }
 }
+@media screen and (min-width:80em) {
+    .footer__content--is-split {
+        flex-wrap: nowrap;
+    }
+}
 .footer__copyright {
     color: $color__transparent;
+    width: 100%;
+}
+@media screen and (min-width:48em) {
+    .footer__copyright {
+        width: auto;
+    }
 }
 .footer__social {
 }
@@ -53,16 +68,69 @@
     max-width: 1.75em;
     height: 1.75em;
     max-height: 1.75em;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    margin-bottom: 0.5em;
     fill: $color__transparent;
     -webkit-transition: fill 0.275s ease;
     -moz-transition: fill 0.275s ease;
     transition: fill 0.275s ease;
+}
+@media screen and (min-width:48em) {
+    .footer__icon {
+        margin-bottom: 0em;
+    }
 }
 .footer__icon:hover {
     fill: $color__transparent--hover;
 }
 .footer__icon:active {
     fill: $color__transparent--active;
+}
+.footer__status {
+    width: 100%;
+    margin-top: 0.75em;
+    margin-bottom: 0.25em;
+    padding: 0.5em 0.5em;
+    font-size: 1em;
+    text-decoration: none;
+    color: $color__transparent;
+    border: 1px solid $color__transparent;
+    border-radius: 2px;
+}
+@media screen and (min-width:48em) {
+    .footer__status {
+        width: auto;
+        font-size: 0.75em;
+    }
+}
+@media screen and (min-width:80em) {
+    .footer__status {
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+}
+.footer__status:hover {
+    border-color: $color__transparent--hover;
+    color: $color__transparent--hover;
+}
+.footer__status:active {
+    border-color: $color__transparent--active;
+    color: $color__transparent--active;
+}
+.footer__status-dot {
+    vertical-align: top;
+    font-family:sans-serif;
+}
+.footer__status-dot.none {
+    color: $color__green;
+}
+.footer__status-dot.minor {
+    color: $color__yellow;
+}
+.footer__status-dot.major {
+    color: $color__orange;
+}
+.footer__status-dot.critical {
+    color: $color__red;
 }

@@ -17,7 +17,11 @@
     <footer class="footer">
         <div class="footer__inner">
             <div class="footer__content footer__content--is-split">
-                <span class="footer__copyright">&copy; 2016 Makersphere HQ - Made with <span style="font-family:sans-serif;color:rgba(240, 70, 109, 0.8);">&hearts;</span> in Zurich</span>
+                <span class="footer__copyright">&copy; {{ site.time | date: '%Y' }} Makersphere HQ - Made with <span style="font-family:sans-serif;color:rgba(240, 70, 109, 0.8);">&hearts;</span> in Zurich</span>
+                <a class="footer__status" href="https://status.makersphere.org" target="_blank">
+                    <span class="footer__status-dot" id="footer__status-dot">&#11044;</span>
+                    <span class="footer__status-desc" id="footer__status-desc"></span>
+                </a>
             </div>
             <div class="footer__content footer__content--is-split">
                 <span class="footer__social">
@@ -32,6 +36,10 @@
                     <a href="{{ site.instagram_url }}"><svg class="footer__icon">
                         <title>Instagram</title>
                         <use xlink:href="#instagram"></use>
+                    </svg></a>
+                    <a href="{{ site.snapchat_url }}"><svg class="footer__icon">
+                        <title>Snapchat</title>
+                        <use xlink:href="#snapchat"></use>
                     </svg></a>
                     <a href="{{ site.github_url }}"><svg class="footer__icon">
                         <title>GitHub</title>
@@ -51,6 +59,7 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.0/js/smooth-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
+    <script src="https://cdn.statuspage.io/se-v2.js"></script>
     <script src="/assets/js/main.js"></script>
     </body>
 </html>
