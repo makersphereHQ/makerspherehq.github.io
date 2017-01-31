@@ -119,8 +119,7 @@
     color: $color__transparent--active;
 }
 .footer__status-dot {
-    vertical-align: top;
-    font-family:sans-serif;
+    vertical-align: baseline;
 }
 .footer__status-dot.none {
     color: $color__green;

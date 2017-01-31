@@ -121,11 +121,10 @@
 }
 .container__item-mc-input {
     display: block;
-    width: 75%;
+    width: 95%;
     padding: 0.5em;
     margin: 0 auto;
     outline: 0;
-    border: 0;
     border: 1px solid $color__transparent;
     border-radius: 2px;
     font-size: 1.25em;
@@ -135,6 +134,11 @@
     text-align: center;
     background: 0 0;
     -webkit-appearance: none;
+}
+@media screen and (min-width:48em) {
+    .container__item-mc-input {
+        width: 75%;
+    }
 }
 .container__item-mc-input:hover {
     border-color: $color__transparent--hover;

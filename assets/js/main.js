@@ -22,3 +22,8 @@ sp.status({
         document.getElementById('footer__status-dot').classList.add(data.status.indicator);
     }
 });
+// MailChimp
+var mc = document.getElementById('mc-embedded-subscribe-form');
+if(navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
+    mc.removeAttribute('target');
+}
