@@ -134,3 +134,32 @@
 .footer__status-dot.critical {
     color: $color__red;
 }
+.footer__mascot {
+    display: none;
+}
+@media screen and (min-width:80em) {
+    .footer__mascot {
+        display: block;
+        width: 6.5em;
+        max-width: 6.5em;
+        height: 6.5em;
+        max-height: 6.5em;
+        opacity: 1;
+        cursor: pointer;
+        position: fixed;
+        bottom: -10em;
+        right: 2em;
+        -webkit-transition: bottom 0.275s, opacity 0.275s ease;
+        -moz-transition: bottom 0.275s, opacity 0.275s ease;
+        transition: bottom 0.275s, opacity 0.275s ease;
+    }
+    .footer__mascot:hover {
+        opacity: 0.9;
+    }
+    .footer__mascot:active {
+        opacity: 0.8;
+    }
+    .footer__mascot--is-visible {
+        bottom: 0;
+    }
+}

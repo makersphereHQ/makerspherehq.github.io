@@ -15,6 +15,10 @@
         </div>
     </section>
     <footer class="footer">
+        <svg class="footer__mascot" id="footer__mascot">
+            <title>Mascot</title>
+            <use xlink:href="#mascot"></use>
+        </svg>
         <div class="footer__inner">
             <div class="footer__content footer__content--is-split">
                 <span class="footer__copyright">&copy; {{ site.time | date: '%Y' }} Makersphere HQ - Made with <span style="color:rgba(240, 70, 109, 0.8);font-family:sans-serif;">&hearts;&#xFE0E;</span> in Zurich</span>
@@ -57,6 +61,10 @@
             </div>
         </div>
     </footer>
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+[{"@context": "http://schema.org/","@type": "Organization","additionalType": "NGO","name": "Makersphere","alternateName": "Makersphere HQ","url": "https://makersphere.org","logo": "https://makersphere.org/assets/img/logomark__ios@2x.png","address": {"@type": "PostalAddress","addressLocality": "Zurich","addressRegion": "ZH","postalCode": "8005","addressCountry": "CH"},"contactPoint": [{"@type": "ContactPoint","telephone": "+41-435088679","contactType": "customer service","availableLanguage": ["English","German","Swiss-German"]}],"sameAs": ["https://twitter.com/makerspherehq","https://instagram.com/makerspherehq","https://facebook.com/makerspherehq"]}, {"@context": "http://schema.org/","@type": "WebSite","name": "Makersphere","url": "https://makersphere.org"}, {"@context": "http://schema.org/","@type": "BreadcrumbList","itemListElement": []}, {"@type": "http://schema.org/SiteNavigationElement","http://schema.org/url": "https://makersphere.org","http://schema.org/name": "Home"}, {"@type": "http://schema.org/SiteNavigationElement","http://schema.org/url": "https://makersphere.org/#about","http://schema.org/name": "About"}, {"@type": "http://schema.org/SiteNavigationElement","http://schema.org/url": "https://blog.makersphere.org","http://schema.org/name": "Blog"}, {"@type": "http://schema.org/SiteNavigationElement","http://schema.org/url": "https://status.makersphere.org","http://schema.org/name": "Status"}]
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.0/js/smooth-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.3/headroom.min.js"></script>
     <script src="https://cdn.statuspage.io/se-v2.js"></script>

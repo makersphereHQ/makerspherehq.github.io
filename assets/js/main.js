@@ -27,3 +27,12 @@ var mc = document.getElementById('mc-embedded-subscribe-form');
 if(navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
     mc.removeAttribute('target');
 }
+// Mascot
+var mascot = document.getElementById('footer__mascot');
+window.onscroll = function(event) {
+    if ((window.innerHeight + window.pageYOffset ) >= document.body.offsetHeight) {
+        mascot.classList.add('footer__mascot--is-visible');
+    } else {
+        mascot.classList.remove('footer__mascot--is-visible');
+    }
+};
